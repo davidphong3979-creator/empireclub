@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>EMPIRE CLUB | Luxury Nightlife</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+
+<!-- ================= HEADER ================= -->
+<header class="header">
+  <div class="logo">EMPIRE</div>
+<div style="display:flex;align-items:center;gap:12px;">
+    <button class="lang-btn active" onclick="setLang('vi')">VI</button>
+    <button class="lang-btn" onclick="setLang('en')">EN</button>
+    <div class="menu-toggle" id="menuToggle">☰</div>
+  </div>
+  </header>
+
+<!-- ================= MENU OVERLAY ================= -->
+<div class="menu-overlay" id="menuOverlay">
+  <nav class="nav">
+    <a href="#about">Giới thiệu / About</a>
+    <a href="#tables">Gói bàn / Tables</a>
+    <a href="#gallery">Không gian / Gallery</a>
+    <a href="#contact">Liên hệ / Contact</a>
+    <a href="tel:0919918178" class="btn">📞 Đặt bàn / Book Table</a>
+  </nav>
+</div>
+
+<!-- ================= HERO ================= -->
+<section class="hero">
+  <h1>EMPIRE CLUB</h1>
+  <p>Where Night Becomes Empire</p>
+  <p style="color:#aaa;font-size:14px;">
+    Nơi màn đêm trở thành đế chế
+  </p>
+  <a href="tel:0919918178" class="hero-btn">
+    📞 Đặt bàn / Book Now
+  </a>
+</section>
+
+<!-- ================= ABOUT ================= -->
+<section id="about" class="section">
+  <h2>Giới thiệu / About Us</h2>
+  <p>
+    <strong>EMPIRE CLUB</strong> là điểm đến giải trí đêm cao cấp tại trung tâm Quận 1, TP.HCM.  
+    Không gian sang trọng, âm thanh – ánh sáng đỉnh cao và dịch vụ VIP chuẩn quốc tế.
+  </p>
+  <p style="margin-top:12px;color:#aaa;">
+    <strong>EMPIRE CLUB</strong> is a premium nightlife destination located in the heart of District 1, Ho Chi Minh City.  
+    Luxury atmosphere, world-class sound & lighting, and exclusive VIP services.
+  </p>
+</section>
+
+<!-- ================= TABLE PACKAGES ================= -->
+<section id="tables" class="section dark">
+  <h2>Gói bàn VIP / VIP Tables</h2>
+  <p>
+    • Bàn tiêu chuẩn – Khu vực trung tâm  
+    <br>• Bàn VIP – View DJ & sân khấu  
+    <br>• Bàn SUPER VIP – Khu vực riêng, phục vụ riêng
+  </p>
+  <p style="margin-top:10px;color:#aaa;">
+    • Standard Table – Central area  
+    <br>• VIP Table – DJ & Stage view  
+    <br>• SUPER VIP – Private area with dedicated service
+  </p>
+
+  <p style="margin-top:18px;color:#bbb;">
+    📞 Liên hệ hotline để nhận báo giá & ưu đãi trong đêm  
+    <br>
+    Contact hotline for pricing & nightly promotions
+  </p>
+</section>
+
+<!-- ================= GALLERY ================= -->
+<section id="gallery" class="section">
+  <h2>Không gian / Gallery</h2>
+  <div class="gallery">
+    <div class="box">Main Club</div>
+    <div class="box">DJ Stage</div>
+    <div class="box">VIP Area</div>
+    <div class="box">Bar</div>
+    <div class="box">Crowd</div>
+    <div class="box">Lighting</div>
+  </div>
+</section>
+
+<!-- ================= CONTACT ================= -->
+<section id="contact" class="section dark">
+  <h2>Liên hệ / Contact</h2>
+  <p>📍 8 Nguyễn Văn Tráng, Quận 1, TP.HCM</p>
+  <p>⏰ 20:00 – 04:00 | Open Daily</p>
+  <p>
+    ☎ Hotline:
+    <a href="tel:0919918178" style="color:gold;text-decoration:none;">
+      0919 918 178
+    </a>
+  </p>
+</section>
+
+<!-- ================= FOOTER ================= -->
+<footer class="footer">
+  <p>© 2026 EMPIRE CLUB</p>
+  <p>Luxury Nightlife Experience</p>
+</footer>
+
+<!-- ================= JS ================= -->
+<script>
+  const toggle = document.getElementById("menuToggle");
+  const overlay = document.getElementById("menuOverlay");
+
+  toggle.onclick = () => overlay.classList.toggle("active");
+
+  overlay.onclick = (e) => {
+    if (e.target === overlay) {
+      overlay.classList.remove("active");
+    }
+  };
+</script>
+
+</body>
+</html>
